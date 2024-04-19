@@ -2,6 +2,7 @@
 #define DATABASE_MANAGER_H
 
 #include "album_dao.h"
+#include "picture_dao.h"
 
 #include <QString>
 
@@ -25,6 +26,7 @@ private:
 
 public:
     const AlbumDao mAlbumDao;
+    const PictureDao mPictureDao;
 };
 
 #endif // DATABASE_MANAGER_H

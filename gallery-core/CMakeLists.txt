@@ -19,6 +19,7 @@ add_library(gallery-core SHARED
   picture.h picture.cpp
   database_manager.h database_manager.cpp
   album_dao.h album_dao.cpp
+  picture_dao.h picture_dao.cpp
 )
 
 target_link_libraries(gallery-core PRIVATE

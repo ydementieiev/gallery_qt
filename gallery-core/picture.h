@@ -13,7 +13,7 @@ public:
     Picture(const QUrl &fileUrl);
 
     int id() const;
-    void setID(int id);
+    void setId(int id);
 
     int albumId() const;
     void setAlbumId(int albumId);

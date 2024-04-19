@@ -12,7 +12,7 @@ int Picture::id() const
 {
     return mId;
 }
-void Picture::setID(int id)
+void Picture::setId(int id)
 {
     mId = id;
 }

@@ -9,7 +9,7 @@ class Album;
 class AlbumDao
 {
 public:
-    AlbumDao(QSqlDatabase &database);
+    explicit AlbumDao(QSqlDatabase &database);
 
     void init() const;
 
