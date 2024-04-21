@@ -1,7 +1,7 @@
-#include "picture_model.h"
+#include "models/picture_model.h"
 
-#include "database_manager.h"
-#include "album_model.h"
+#include "db/database_manager.h"
+#include "models/album_model.h"
 
 using namespace std;
 

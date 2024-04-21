@@ -1,4 +1,4 @@
-#include "album_model.h"
+#include "models/album_model.h"
 
 AlbumModel::AlbumModel(QObject* parent)
     : QAbstractListModel(parent)

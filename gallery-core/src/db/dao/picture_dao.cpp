@@ -1,6 +1,6 @@
-#include "picture_dao.h"
+#include "db/dao/picture_dao.h"
 
-#include "database_manager.h"
+#include "db/database_manager.h"
 #include "picture.h"
 
 #include <QSqlDatabase>

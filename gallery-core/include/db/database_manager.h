@@ -1,8 +1,8 @@
 #ifndef DATABASE_MANAGER_H
 #define DATABASE_MANAGER_H
 
-#include "album_dao.h"
-#include "picture_dao.h"
+#include "db/dao/album_dao.h"
+#include "db/dao/picture_dao.h"
 
 #include <QString>
 

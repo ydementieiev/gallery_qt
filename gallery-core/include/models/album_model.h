@@ -8,7 +8,7 @@
 
 #include "gallery-core_global.h"
 #include "album.h"
-#include "database_manager.h"
+#include "db/database_manager.h"
 
 class GALLERYCORE_EXPORT AlbumModel : public QAbstractListModel
 {

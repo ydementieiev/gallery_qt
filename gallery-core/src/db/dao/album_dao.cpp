@@ -1,6 +1,6 @@
-#include "album_dao.h"
+#include "db/dao/album_dao.h"
 
-#include "database_manager.h"
+#include "db/database_manager.h"
 #include "album.h"
 
 #include <QSqlDatabase>
