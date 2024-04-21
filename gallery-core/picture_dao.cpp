@@ -41,7 +41,7 @@ void PictureDao::removePicture(int id) const
     query.exec();
 }
 
-void PictureDao::removePicturesFromAlbum(int albumId) const
+void PictureDao::removePicturesForAlbum(int albumId) const
 {
     QSqlQuery query(mDatabase);
     query.prepare("DELETE FROM pictures WHERE album_id = :album_id");
@@ -49,7 +49,7 @@ void PictureDao::removePicturesFromAlbum(int albumId) const
     query.exec();
 }
 
-PictureDao::PictureVectorPtr PictureDao::picturesFromAlbum(int albumId) const
+PictureDao::PictureVectorPtr PictureDao::picturesForAlbum(int albumId) const
 {
     QSqlQuery query(mDatabase);
     query.prepare("SELECT * FROM pictures WHERE album_id = :album_id");

@@ -20,6 +20,8 @@ add_library(gallery-core SHARED
   database_manager.h database_manager.cpp
   album_dao.h album_dao.cpp
   picture_dao.h picture_dao.cpp
+  album_model.h album_model.cpp
+  picture_model.h picture_model.cpp
 )
 
 target_link_libraries(gallery-core PRIVATE

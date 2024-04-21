@@ -19,8 +19,8 @@ public:
 
     void addPictureInAlbum(int albumId, Picture &picture) const;
     void removePicture(int id) const;
-    void removePicturesFromAlbum(int albumId) const;
-    PictureVectorPtr picturesFromAlbum(int albumId) const;
+    void removePicturesForAlbum(int albumId) const;
+    PictureVectorPtr picturesForAlbum(int albumId) const;
 
 private:
     QSqlDatabase &mDatabase;
