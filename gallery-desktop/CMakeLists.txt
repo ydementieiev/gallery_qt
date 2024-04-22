@@ -25,7 +25,8 @@ set(PROJECT_SOURCES
 # Add an executable for the project using Qt-specific setup
 qt_add_executable(${PROJECT_NAME} MANUAL_FINALIZATION ${PROJECT_SOURCES}
     album_list_widget.h album_list_widget.cpp album_list_widget.ui
-    res/resource.qrc)
+    res/resource.qrc
+    thumbnail_proxy_model.h thumbnail_proxy_model.cpp)
 
 # Link the executable to necessary Qt modules and the gallery-core library
 target_link_libraries(${PROJECT_NAME} PRIVATE
