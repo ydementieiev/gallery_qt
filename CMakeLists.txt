@@ -1,8 +1,6 @@
 cmake_minimum_required(VERSION 3.5)
 
-project(ch03-gallery-core LANGUAGES CXX)
-
-# set(CMAKE_CXX_STANDARD 17)
-# set(CMAKE_CXX_STANDARD_REQUIRED ON)
+project(gallery-project LANGUAGES CXX)
 
 add_subdirectory(gallery-core)
+add_subdirectory(gallery-desktop)

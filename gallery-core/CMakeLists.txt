@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.14)
+cmake_minimum_required(VERSION 3.5)
 
 # Set the project name and specify the required C++ standard
 project(gallery-core LANGUAGES CXX)
@@ -11,7 +11,7 @@ set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
 
 # Find required Qt packages
-find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Core)
+find_package(QT NAMES Qt6 REQUIRED COMPONENTS Core)
 find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Core Sql)
 
 # Specify the list of header files
