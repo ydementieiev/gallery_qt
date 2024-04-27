@@ -11,18 +11,18 @@ class PictureModel;
 class ThumbnailProxyModel : public QIdentityProxyModel
 {
 public:
-    ThumbnailProxyModel(QObject* parent = nullptr);
+    ThumbnailProxyModel(QObject *parent = 0);
 
-    QVariant data(const QModelIndex& index, int role) const override;
-    void setSourceModel(QAbstractItemModel* sourceModel) override;
-    PictureModel* pictureModel() const;
+    QVariant data(const QModelIndex &index, int role) const override;
+    void setSourceModel(QAbstractItemModel *sourceModel) override;
+    PictureModel *pictureModel() const;
 
 private:
-    void generateThumbnails(const QModelIndex& startIndex, int count);
     void reloadThumbnails();
+    void generateThumbnails(const QModelIndex &startIndex, int count);
 
 private:
-    QHash<QString, QPixmap*> mThambnails;
+    QHash<QString, QPixmap *> mThumbnails;
 };
 
 #endif // THUMBNAIL_PROXY_MODEL_H

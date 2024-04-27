@@ -25,8 +25,12 @@ set(PROJECT_SOURCES
 # Add an executable for the project using Qt-specific setup
 qt_add_executable(${PROJECT_NAME} MANUAL_FINALIZATION ${PROJECT_SOURCES}
     album_list_widget.h album_list_widget.cpp album_list_widget.ui
+    album_widget.h album_widget.cpp album_widget.ui
     res/resource.qrc
-    thumbnail_proxy_model.h thumbnail_proxy_model.cpp)
+    thumbnail_proxy_model.h thumbnail_proxy_model.cpp
+    picture_delegate.h picture_delegate.cpp
+    picture_widget.h picture_widget.cpp picture_widget.ui
+    gallery_widget.h gallery_widget.cpp gallery_widget.ui)
 
 # Link the executable to necessary Qt modules and the gallery-core library
 target_link_libraries(${PROJECT_NAME} PRIVATE
@@ -34,6 +38,9 @@ target_link_libraries(${PROJECT_NAME} PRIVATE
     Qt6::Core
     gallery-core # Ensure gallery-core is being built or available
 )
+
+# Specify include directories for the target
+target_include_directories(${PROJECT_NAME} PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
 
 # Set application and bundle properties
 set_target_properties(${PROJECT_NAME} PROPERTIES
